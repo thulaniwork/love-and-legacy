@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postpartum Sanctuary | The Revolutionary Love & Legacy Center</title>
+    <link rel="preconnect" href="https://googleapis.com"><link rel="preconnect" href="https://gstatic.com" crossorigin><link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #3d2b25; --accent: #bfa594; --bg: #fdfcfb; --text: #222222; --text-muted: #555555; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+        
+        @keyframes luxuryFadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .anim-fade { opacity: 0; animation: luxuryFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        nav { max-width: 1200px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 100; }
+        .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; background: none; border: none; padding: 0; font-family: inherit; }
+        .dropdown-content { display: none; position: absolute; background-color: white; min-width: 220px; box-shadow: 0px 8px 24px rgba(0,0,0,0.05); border: 1px solid #f0eae5; padding: 0.5rem 0; margin-top: 0.5rem; }
+        .dropdown-content a { color: var(--text-muted); padding: 0.75rem 1.5rem; text-decoration: none; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-links > a { color: var(--text); text-decoration: none; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; }
+        
+        header { max-width: 900px; margin: 6rem auto 4rem auto; padding: 0 2rem; text-align: center; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; color: var(--primary); margin-bottom: 1rem; }
+        .subtitle { font-style: italic; color: var(--text-muted); font-size: 1.2rem; font-family: 'Cormorant Garamond', serif; }
+        .content-grid { max-width: 1000px; margin: 0 auto 6rem auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; border-top: 1px solid #e5ded8; padding-top: 4rem; }
+        .package-title h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 400; color: var(--primary); margin: 0; }
+        .features { list-style: none; padding: 0; }
+        .features li { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; font-weight: 300; color: var(--text-muted); }
+        .features strong { color: var(--primary); font-weight: 500; }
+        footer { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; border-top: 1px solid #f0eae5; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <nav class="anim-fade">
+        <a href="index.html" class="logo">R.L.L.C.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropdown-btn" style="color: var(--accent);">Doula Packages</button>
+                <div class="dropdown-content">
+                    <a href="birth-support.html">Birth Support</a>
+                    <a href="postpartum-support.html">Postpartum Support</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <h1 class="anim-fade delay-1">The Fourth Trimester Sanctuary</h1>
+        <p class="subtitle anim-fade delay-2">Bespoke home-integration routines engineered specifically to care for the parent.</p>
+    </header>
+    <main class="content-grid anim-fade delay-3">
+        <div class="package-title">
+            <h2>Postpartum Care</h2>
+        </div>
+        <div>
+            <ul class="features">
+                <li><strong>Tissue & Physiological Recovery:</strong> Dedicated physical healing routines tracking emotional hormonal realignments safely.</li>
+                <li><strong>Infant Structural Sleep:</strong> Evidence-based soothing architectures designed to stabilize resting metrics across the whole household.</li>
+                <li><strong>Nutritional Food Integration:</strong> In-house custom meal planning engineered entirely around hormonal re-balancing and recovery.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>&copy; 2026 The Revolutionary Love & Legacy Center. All Rights Reserved.</div>
+        <div>Sovereign Care Architecture</div>
+    </footer>
+</body>
+</html>
