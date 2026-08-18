@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Intake | The Revolutionary Love & Legacy Center</title>
+    <link rel="preconnect" href="https://googleapis.com"><link rel="preconnect" href="https://gstatic.com" crossorigin><link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #3d2b25; --accent: #bfa594; --bg: #fdfcfb; --text: #222222; --text-muted: #555555; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+        
+        @keyframes luxuryFadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .anim-fade { opacity: 0; animation: luxuryFadeUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+
+        nav { max-width: 1200px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 100; }
+        .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 2.5rem; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-btn { color: var(--text); text-decoration: none; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; background: none; border: none; padding: 0; font-family: inherit; }
+        .dropdown-content { display: none; position: absolute; background-color: white; min-width: 220px; box-shadow: 0px 8px 24px rgba(0,0,0,0.05); border: 1px solid #f0eae5; padding: 0.5rem 0; margin-top: 0.5rem; }
+        .dropdown-content a { color: var(--text-muted); padding: 0.75rem 1.5rem; text-decoration: none; display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .nav-links > a { color: var(--text); text-decoration: none; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; }
+        
+        .form-container { max-width: 650px; margin: 6rem auto; padding: 0 2rem; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; text-align: center; color: var(--primary); margin-bottom: 3rem; }
+        .form-group { margin-bottom: 2rem; }
+        label { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--primary); font-weight: 500; }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea { width: 100%; padding: 1rem; border: 1px solid #e5ded8; background-color: white; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--text); border-radius: 0; transition: border-color 0.3s; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+        .submit-btn { display: block; width: 100%; border: 1px solid var(--primary); color: var(--primary); padding: 1.2rem; text-decoration: none; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; background: transparent; cursor: pointer; transition: all 0.4s; }
+        .submit-btn:hover { background: var(--primary); color: white; }
+        footer { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; border-top: 1px solid #f0eae5; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <nav class="anim-fade">
+        <a href="index.html" class="logo">R.L.L.C.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">Doula Packages</button>
+                <div class="dropdown-content">
+                    <a href="birth-support.html">Birth Support</a>
+                    <a href="postpartum-support.html">Postpartum Support</a>
+                </div>
+            </div>
+            <a href="contact.html" style="color: var(--accent);">Contact</a>
+        </div>
+    </nav>
+    <main class="form-container">
+        <h1 class="anim-fade delay-1">Private Intake Portal</h1>
+        <form action="https://formspree.io" method="POST" class="anim-fade delay-2">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Estimated Due Date</label>
+                <input type="date" name="due_date" required>
+            </div>
+            <div class="form-group">
+                <label>Neighborhood or Region</label>
+                <input type="text" name="neighborhood" placeholder="e.g., Queens, NY / Brooklyn" required>
+            </div>
+            <div class="form-group">
+                <label>Planned Birth Location</label>
+                <input type="text" name="location" placeholder="e.g., Hospital, Home, or Birth Center" required>
+            </div>
+            <div class="form-group">
+                <label>Assigned OB/GYN or Midwife Practitioner</label>
+                <input type="text" name="provider">
+            </div>
+            <div class="form-group">
+                <label>Desired Support Package</label>
+                <select name="service_interest">
+                    <option value="birth">Sovereign Birth Support Container</option>
+                    <option value="postpartum">The Fourth Trimester Sanctuary</option>
+                    <option value="both">Comprehensive Combined Care</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Secure Intake</button>
+        </form>
+    </main>
+    <footer>
+        <div>&copy; 2026 The Revolutionary Love & Legacy Center. All Rights Reserved.</div>
+        <div>Sovereign Care Architecture</div>
+    </footer>
+</body>
+</html>
